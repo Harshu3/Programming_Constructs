@@ -1,5 +1,5 @@
 ﻿using System;
-using Programming_Constructs.IfandElse;
+using Programming_Constructs.If_Else_if_Else;
 
 namespace Programming_Constructs
 {
@@ -8,21 +8,17 @@ namespace Programming_Constructs
         static void Main(string[] args)
         {
             Console.WriteLine("Please choose any one from below options");
-            Console.WriteLine("1.Equal or not\n2.Even or Odd\n3.Eligible Age");
+            Console.WriteLine("1.Largest among three\n2.Eligible for admission");
             int option = Convert.ToInt32(Console.ReadLine());
             switch (option)
             {
                 case 1:
-                    Equals eq = new Equals();
-                    eq.CheckEqualOrNot();
+                    LargestAmongThree three = new LargestAmongThree();
+                    three.LargestOfThree();
                     break;
                 case 2:
-                    EvenOrOdd evenOrOdd = new EvenOrOdd();
-                    evenOrOdd.CheckOddEven();
-                    break;
-                case 3:
-                    EligibleAge age = new EligibleAge();
-                    age.CandidateAge();
+                    EligibleForAdmission eligible = new EligibleForAdmission();
+                    eligible.Eligibility();
                     break;
             }
         }
