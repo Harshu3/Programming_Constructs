@@ -1,5 +1,5 @@
-﻿using System;
-using Programming_Constructs.If_Else_if_Else;
+﻿using Programming_Constructs.Switch_Case;
+using System;
 
 namespace Programming_Constructs
 {
@@ -8,17 +8,17 @@ namespace Programming_Constructs
         static void Main(string[] args)
         {
             Console.WriteLine("Please choose any one from below options");
-            Console.WriteLine("1.Largest among three\n2.Eligible for admission");
+            Console.WriteLine("1.Weekday Name\n2.Arithmatic Operations");
             int option = Convert.ToInt32(Console.ReadLine());
             switch (option)
             {
                 case 1:
-                    LargestAmongThree three = new LargestAmongThree();
-                    three.LargestOfThree();
+                    WeekDay weekDay = new WeekDay();
+                    weekDay.WeekNum();
                     break;
                 case 2:
-                    EligibleForAdmission eligible = new EligibleForAdmission();
-                    eligible.Eligibility();
+                    ArithmaticOperations operations = new ArithmaticOperations();
+                    operations.Operations();
                     break;
             }
         }
